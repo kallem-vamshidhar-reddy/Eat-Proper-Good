@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Your Eat Proper Good Account</title>
+  <meta name="description" content="Update your personal details, track your orders, and manage your Eat Proper Good account settings.">
+  <meta name="keywords" content="restaurant, food, fresh meals, pasta, juices, healthy food">
+  <meta name="author" content="Eat Proper Good">
+  <meta property="og:title" content="Eat Proper Good - Healthy Meals Delivered">
+  <meta property="og:description" content="Order nutritious and delicious meals online, delivered straight to your door with Eat Proper Good. Start your healthy eating journey today!">
+  <meta property="og:image" content="assets/images/meal1.jpg">
+  <meta property="og:url" content="http://www.eatpropergood.com">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHVGYS2LGY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QHVGYS2LGY');
+</script>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+      <a href="index.html"><img src="assets/images/logo.jpg" alt="Eat Proper Good Logo" class="logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="homeLink">Home</a></li>
+        <li><a href="shop.html" id="shopLink">Shop</a></li>
+        <li><a href="account.html" id="accountLink">Account</a></li>
+        <li><a href="bogo.html" id="bogoLink">BOGO</a></li>
+        <li><a href="meal-prep-tips.html" id="mealPrepLink">Meal Prep Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Account</h1>
+    <h2>Manage Your Profile and Orders</h2>
+
+    <!-- Account Information Form -->
+    <section class="account-info">
+      <h3>Account Information</h3>
+      <form id="accountForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+        </div>
+        <button type="submit">Update Profile</button>
+      </form>
+      <div id="errorMessage" style="color: red; display: none;"></div>
+    </section>
+
+    <!-- Order History Section -->
+    <section class="order-history">
+      <h3>Order History</h3>
+      <div id="ordersList">
+        <!-- Dynamic order items will be inserted here -->
+        <p>You have no orders yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-social">
+        <p>Follow Us:</p>
+        <ul>
+          <li><a href="https://www.facebook.com/eatpropergood" target="_blank"><img src="assets/images/footer1.png" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/eatpropergood/" target="_blank"><img src="assets/images/footer2.png" alt="Instagram"></a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="mailto:support@eatpropergood.com">support@eatpropergood.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Eat Proper Good | All rights reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>

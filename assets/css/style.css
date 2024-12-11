@@ -1,0 +1,391 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F8F8F8; /* Light background color */
+  color: #333;
+}
+
+header {
+  background: #D2E3FC; /* Updated header background color */
+  color: #333; /* Dark text for contrast */
+  padding: 20px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center the items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a.active {
+  border-bottom: 3px solid #FAD2CF; /* Peach color for active link */
+}
+
+nav a:hover {
+  color: #de3528; /* Hover effect with peach color */
+}
+
+/* Main Content Section */
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Set a max-width for the main content */
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+}
+
+.subscribe-offer {
+  background-color: #FAD2CF; /* Peach background for subscription offer */
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+.subscribe-offer h3 {
+  color: #333;
+  font-size: 24px;
+}
+
+.subscribe-offer p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.subscribe-offer .subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe-offer input {
+  padding: 12px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.subscribe-offer button {
+  background-color: #FF6347; /* Tomato color for button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-offer button:hover {
+  background-color: #E5533E; /* Darker shade on hover */
+}
+
+
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background: #D2E3FC; /* Updated footer background color */
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #E5533E;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social ul li {
+  margin-right: 15px;
+}
+
+.footer-social ul li a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer-social ul li a:hover {
+  color: #0077b5;
+}
+
+.footer-social ul li a:hover img {
+  filter: brightness(1.2);
+}
+
+
+/* Featured Meals Section */
+#featured-meals {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensure that items can wrap on smaller screens */
+}
+
+.meal-item {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px; /* Space at the bottom between meal items */
+}
+
+.meal-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add smooth transform on hover */
+}
+
+.meal-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.meal-item h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.meal-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  display: inline-block;
+  background-color: #28a745; /* Green color for the CTA button */
+  color: #fff;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.category-button.active {
+  background-color: #0056b3;
+}
+
+.meal-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+}
+
+.meal img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.shopping-bag {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#total-summary {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+#checkout {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+#checkout:hover {
+  background-color: #0056b3;
+}
+
+.account-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.account-info .form-group {
+  margin-bottom: 20px;
+}
+
+.account-info .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.account-info .form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.account-info button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.account-info button:hover {
+  background-color: #218838;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Stack navigation below header */
+  header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* Space between header and nav */
+  }
+
+  nav ul {
+    display: block; /* Stack nav items vertically */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add space between links */
+  }
+
+  nav a:hover {
+    color: #de3528; /* Hover effect with peach color */
+  }
+
+  main {
+    padding: 10px;
+    margin: 0 15px; /* Add margin on small screens */
+  }
+  .account-info {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .meal-item {
+    width: 100%;
+  }
+  
+}
